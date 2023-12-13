@@ -11,7 +11,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.set('views', "./nodejs-webscraper-main" + '/views');
+app.set('views', '');
 
 const favicon = require('serve-favicon');
 const path = require('path');
