@@ -11,14 +11,14 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.set('views', "./nodejs-webscraper-main" + '/views');
+app.set('views', "");
 
 const favicon = require('serve-favicon');
 const path = require('path');
 
-app.use("/public", express.static('/nodejs-webscraper-main/src/pubic'));
-app.use(favicon(path.join(__dirname, '/nodejs-webscraper-main/src/public', 'favicon.ico')));
-app.use(express.static(__dirname+'/nodejs-webscraper-main/src/public'));
+app.use("/public", express.static('/nodejs-webscraper'));
+app.use(favicon(path.join(__dirname, '/', 'favicon.ico')));
+app.use(express.static(__dirname));
 
 const apiRequestLimiter = rateLimit({
     windowMs: 1 * 60 * 1000, // 1 minute
