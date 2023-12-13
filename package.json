@@ -2,9 +2,9 @@
   "name": "web-scraper",
   "version": "1.0.0",
   "description": "",
-  "main": "nodejs-webscraper-main/src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon nodejs-webscraper-main/src/index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
